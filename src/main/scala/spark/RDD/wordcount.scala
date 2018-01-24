@@ -1,4 +1,4 @@
-package spark
+package spark.RDD
 
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
