@@ -9,14 +9,15 @@ object RDD {
     val conf = new SparkConf().setAppName("linecount").setMaster("local")
     val sc = new SparkContext(conf)
     sc.setLogLevel("ERROR")
-    
-    // RDD Transform Operations Example 
+
+    // RDD Transform Operations Example
     val inputRDD = sc.textFile("./src/main/resources/")
     val errorsRDD = inputRDD.filter(line => line.contains("error"))
     val warningsRDD = inputRDD.filter(line => line.contains("warning"))
     val badlinesRDD = errorsRDD.union(warningsRDD)
-    
+
     // 输出结果
-    println(badlinesRDD.collect().mkString("\n"))
+    // println(badlinesRDD.collect().mkString("\n"))
+    badlinesRDD.foreach(println)
   }
 }
