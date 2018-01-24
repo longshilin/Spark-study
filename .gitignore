@@ -1,5 +1,9 @@
 /bin/
-/.cache-tests
-/.cache-main
-/.classpath
-/.project
+
+.cache-tests
+
+.cache-main
+
+.classpath
+
+.project
