@@ -1,11 +1,12 @@
 /bin/
 /target/
+/output
 /.cache-tests
 
 /.cache-main
 
 /.classpath
- 
+
 /.project
 
 
