@@ -2,11 +2,11 @@
 /target/
 /output
 /.cache-tests
-
+/metastore_db
 /.cache-main
-
+/src
 /.classpath
-
+/.settings
 /.project
 
 
