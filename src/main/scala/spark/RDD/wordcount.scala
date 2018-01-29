@@ -11,7 +11,7 @@ object wordcount {
     //    conf.set("spark.executor.memory", "512m")
     //    conf.set("spark.driver.memory", "512m")
     val sc = new SparkContext(conf)
-    sc.setLogLevel("ERROR")
+//    sc.setLogLevel("ERROR")
     val localData = sc.textFile(localFile).cache()
     //    val numAs = localData.filter(line => line.contains("s")).count()
     //    val numBs = localData.filter(line => line.contains("r")).count()
